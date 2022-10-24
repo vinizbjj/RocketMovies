@@ -1,0 +1,69 @@
+import styled from "styled-components";
+
+export const Container = styled.header`
+    grid-area: header;
+
+    height: 105px;
+    width: 100%;
+
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: ${({ theme }) => theme.COLORS.GRAY_500};    
+
+    background-color: ${({ theme }) => theme.COLORS.GRAY_500};  
+
+    display: flex;    
+    align-items: center;
+
+    padding: 24px 123px;  
+   
+    h1{
+
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: ${({ theme }) => theme.COLORS.PINK};
+    }
+
+`;
+
+
+export const Profile = styled.div`
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+
+    > img {
+       width: 56px;
+       height: 56px;
+       border: 1px solid ${({ theme }) => theme.COLORS.GRAY_500};
+       border-radius: 3.5rem;
+       margin-left: 10px;
+}
+
+    > div {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2rem;
+    align-items: flex-end;
+    
+
+    span{
+        justify-items: end;
+        font-weight: 400;
+        font-size: 1.4rem;
+        color: ${({ theme }) => theme.COLORS.GRAY_300};
+    }
+    
+    strong{
+        font-weight: 700;
+        font-size: 1.4rem;
+
+        color: ${({ theme }) => theme.COLORS.WHITE_100};
+
+    }
+
+}
+
+
+`;
