@@ -3,14 +3,14 @@ import styled from "styled-components";
 export const Container = styled.header`
     grid-area: header;
 
-    height: 105px;
+    height: 144px;
     width: 100%;
 
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: ${({ theme }) => theme.COLORS.GRAY_500};    
 
-    background-color: ${({ theme }) => theme.COLORS.GRAY_500};  
+    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};  
 
     display: flex;    
     align-items: center;
@@ -26,7 +26,6 @@ export const Container = styled.header`
 
 `;
 
-
 export const Profile = styled.div`
     width: 100%;
     display: flex;
@@ -39,6 +38,7 @@ export const Profile = styled.div`
        border: 1px solid ${({ theme }) => theme.COLORS.GRAY_500};
        border-radius: 3.5rem;
        margin-left: 10px;
+       cursor: pointer;
 }
 
     > div {
@@ -48,21 +48,25 @@ export const Profile = styled.div`
     align-items: flex-end;
     
 
-    span{
+    span {
         justify-items: end;
         font-weight: 400;
         font-size: 1.4rem;
         color: ${({ theme }) => theme.COLORS.GRAY_300};
+        cursor: pointer;
     }
     
-    strong{
+    strong {
         font-weight: 700;
         font-size: 1.4rem;
 
         color: ${({ theme }) => theme.COLORS.WHITE_100};
-
     }
 
+}
+
+    > div :nth-child(1){
+    width: 115px;
 }
 
 
