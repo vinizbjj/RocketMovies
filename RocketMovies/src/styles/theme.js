@@ -11,10 +11,11 @@ export default {
 
         GRAY_500: "#3E3B47",
         GRAY_300: "#948F99",
+        GRAY_200: "#999591",
 
         PINK: "#FF859B",
     }
 }
 
 
-/* ${({ theme }) => theme.COLORS.BACKGROUND_800}; */
+/* ${({ theme }) => theme.COLORS.BACKGROUND_600}; */

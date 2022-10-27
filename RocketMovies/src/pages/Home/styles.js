@@ -5,7 +5,14 @@ export const Container = styled.div`
     width: 100%;
     height: 100vh;
 
-    > Section {
+    display: grid;
+    grid-template-rows: 160px 128px auto;
+    grid-template-areas:
+    "header"
+    "section"
+    "content";
+
+> Section {
     width: 100%;
     max-height: 42px;
 
@@ -13,19 +20,24 @@ export const Container = styled.div`
     justify-content: space-between;
 
     align-items: center;
-    }
+    padding: 1px 104px; 
+}
 
-    > Section h2{
+> Section h2{
         font-size: 3.2rem;
         font-weight: 400;      
-    }
+}
     
-
+> main{
+    grid-area: content;
+    overflow-y: auto;
+    overflow-x: hidden; 
+    width:100%;
+    height:100vh;
+    padding: 0 123px;    
+}   
 `;
 
-export const Brand = styled.div`
-
-`;
 export const NewNote = styled.button`
     width: 207px;
     height: 48px;
@@ -54,11 +66,38 @@ export const NewNote = styled.button`
     
 
 `;
+
 export const Content = styled.div`
+background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
+padding: 32px;
+border-radius: 16px;
+margin-bottom: 24px;
 
+> h4 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+> p {
+    width: 100%;
+    max-height: 60px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: ${({ theme }) => theme.COLORS.GRAY_200};
+}
+
+button svg {
+    font-size: 16px;
+    padding-right: 2px;
+    margin: 2px 0;
+}
 > span{
-        padding: 0;
-    }
-
+    line-height: 65px;
+    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_600};
+}
 `;
 
