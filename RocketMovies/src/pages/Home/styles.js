@@ -28,14 +28,29 @@ export const Container = styled.div`
         font-weight: 400;      
 }
     
-> main{
+> main {
     grid-area: content;
     overflow-y: auto;
     overflow-x: hidden; 
     width:100%;
-    height:100vh;
+    height:500px;
     padding: 0 123px;    
-}   
+}
+
+
+main::-webkit-scrollbar {
+    width: 8px;
+}
+
+
+main::-webkit-scrollbar-thumb {
+    background: ${({ theme }) => theme.COLORS.PINK};  
+    border-radius: 18px;       
+    border: 3px solid ${({ theme }) => theme.COLORS.PINK};
+}
+
+    
+   
 `;
 
 export const NewNote = styled.button`
@@ -80,11 +95,14 @@ margin-bottom: 24px;
 }
 
 > p {
-    width: 100%;
-    max-height: 60px;
+    display: -webkit-box;
+    max-width: 100%;
+    height: 50.2px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
     overflow: hidden;
-    white-space: nowrap;
     text-overflow: ellipsis;
+    line-height: 1.625;
     font-size: 1.6rem;
     font-weight: 400;
     color: ${({ theme }) => theme.COLORS.GRAY_200};

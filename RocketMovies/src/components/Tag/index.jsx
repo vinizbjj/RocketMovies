@@ -1,13 +1,9 @@
 import { Container, Text } from "./styles";
 
 export function Tag({ title, children, ...rest }) {
-  return <Container>{title}</Container>;
+  return <Container {...rest}>{title}</Container>;
 }
 
 export function TextLorem({ title, children }) {
-  return (
-    <Text>     
-      {children}
-    </Text>
-  );
+  return <Text>{children}</Text>;
 }
