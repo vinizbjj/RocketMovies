@@ -22,4 +22,10 @@ export const Container = styled.div`
 
         font-size: 1.6rem;
     }
+
+    > svg{
+        height: 24px;
+        width: 24px;
+        overflow: auto;
+    }
 `;

@@ -1,8 +1,9 @@
 import styled from 'styled-components'
+
 export const Container = styled.div`
     width: 100%;
 
-    > header {
+> header {
         width: 100%;
         height: 144px;
         display: flex;
@@ -10,15 +11,12 @@ export const Container = styled.div`
         padding: 0 124px;
 
         background: ${({ theme }) => theme.COLORS.BACKGROUND_600};
-
     }
 
-    > header a span {
+> header a span {
         margin: 0;
         padding: 0;
-
-
-    }
+}
 `;
 
 export const Form = styled.form`
@@ -26,14 +24,14 @@ export const Form = styled.form`
     margin: 30px auto 0;
 
 
-    > div {
+> div {
         padding: 0;
         
-    }
+}
 
-    > div:nth-child(4){
+> div:nth-child(4){
         margin-top: 24px;
-    }
+}
     
 `;
 
