@@ -12,20 +12,25 @@ export const Container = styled.div`
 
     > input {
         height: 56px;
-        min-width: 100%;
-
-        padding: 12px;
-
+        width: 100%;
         background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
-        color: ${({ theme }) => theme.COLORS.GRAY_300};
+        color: ${({ theme }) => theme.COLORS.WHITE_100};
         border: none;
+        border-top-right-radius: 10px;
+        border-end-end-radius: 10px;
 
         font-size: 1.6rem;
     }
-
     > svg{
-        height: 24px;
-        width: 24px;
-        overflow: auto;
+        
+        height: 56px;
+        width: 61px;
+        padding: 16px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        
+        
+        color: ${({ theme }) => theme.COLORS.GRAY_300};
+        background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
     }
 `;

@@ -6,19 +6,6 @@ export const Container = styled.div`
     display: flex;
     align-items: stretch;
 
-    > svg {
-        width: 20px;
-        height: 20px;
-
-        color: ${({ theme }) => theme.COLORS.BACKGROUND_600};
-    }
-
-    svg {
-        width: 20px;
-        height: 20px;
-
-        color: ${({ theme }) => theme.COLORS.BACKGROUND_600};
-    }
 `;
 
 export const Form = styled.form`
@@ -63,20 +50,6 @@ export const Form = styled.form`
         padding-left: 11.2rem;
         padding-top: 4.2rem;
 
-    }
-
-    > svg {
-        width: 20px;
-        height: 20px;
-
-        color: ${({ theme }) => theme.COLORS.BACKGROUND_600};
-    }
-
-    svg {
-        width: 20px;
-        height: 20px;
-
-        color: ${({ theme }) => theme.COLORS.BACKGROUND_600};
     }
 
     
