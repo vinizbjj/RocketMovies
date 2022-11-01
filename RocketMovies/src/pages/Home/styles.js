@@ -47,9 +47,7 @@ main::-webkit-scrollbar-thumb {
     background: ${({ theme }) => theme.COLORS.PINK};  
     border-radius: 18px;       
     border: 3px solid ${({ theme }) => theme.COLORS.PINK};
-}
-
-    
+} 
    
 `;
 
@@ -83,7 +81,7 @@ export const NewNote = styled.button`
 `;
 
 export const Content = styled.div`
-background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
+background-color: ${({ theme }) => theme.COLORS.PINK_100};
 padding: 32px;
 border-radius: 16px;
 margin-bottom: 24px;

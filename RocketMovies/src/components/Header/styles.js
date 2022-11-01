@@ -41,11 +41,22 @@ export const Profile = styled.div`
        cursor: pointer;
 }
 
-    > div {
+    > div:nth-child(2) {
     display: flex;
     flex-direction: column;
     line-height: 1.2rem;
     align-items: flex-end;
+    padding-left: 70px;
+    }
+    
+    > div:nth-child(3) {
+    display: flex;
+    width: 16rem;
+    flex-direction: column;
+    line-height: 1.2rem;
+    align-items: flex-end;
+    
+    }
     
 
     span {
@@ -63,10 +74,12 @@ export const Profile = styled.div`
         color: ${({ theme }) => theme.COLORS.WHITE_100};
     }
 
-}
+
 
     > div :nth-child(1){
-    width: 115px;
+    min-width: 100%;
+    border-radius: 10px;
+    padding-left: 8px;
 }
 
 
