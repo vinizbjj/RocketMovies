@@ -50,6 +50,10 @@ export const Form = styled.form`
     display: flex;
     margin-left: 35px;
   }
+  > div:nth-child(2) input {
+    padding-left: 16px;
+    border-radius: 10px;
+  }
 
   > span {
     margin-left: 104px;
@@ -76,7 +80,7 @@ export const Form = styled.form`
   }
   
   > div:nth-child(6) {
-    padding: 0 104px;
+    padding: 0 104px 0 70px;
     display: flex;
     justify-content: space-between;
     width: 100%;  
@@ -113,7 +117,7 @@ export const TextArea = styled.textarea`
 
   &::placeholder{
     color: ${({ theme }) => theme.COLORS.GRAY_300};
-    padding: 8px;
+    padding: 16px;
 
     
   }

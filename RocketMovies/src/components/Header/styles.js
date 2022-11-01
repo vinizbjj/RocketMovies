@@ -54,11 +54,9 @@ export const Profile = styled.div`
     width: 16rem;
     flex-direction: column;
     line-height: 1.2rem;
-    align-items: flex-end;
+    align-items: flex-end;    
+    }   
     
-    }
-    
-
     span {
         justify-items: end;
         font-weight: 400;
@@ -73,8 +71,6 @@ export const Profile = styled.div`
 
         color: ${({ theme }) => theme.COLORS.WHITE_100};
     }
-
-
 
     > div :nth-child(1){
     min-width: 100%;

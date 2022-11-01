@@ -46,18 +46,24 @@ export const Form = styled.form`
     > a {
         font-weight: 400;
         font-size: 1.6rem;
-        color: ${({ theme }) => theme.COLORS.PINK};
+        color: ${({ theme }) => theme.COLORS.PINK};  
+    
+    > span {
+        padding: 0;
+        font-weight: 400;
+        margin: 42px 0 0 70px;
 
-        padding-left: 11.2rem;
-        padding-top: 4.2rem;
-
+    > h2 {
+            font-weight: 400;
+        }
+    }
     }    
 `;
 
 export const Background = styled.div`
     flex: 1;
     background: url(${backgroundImg}) no-repeat center;
-    background-size: cover;
-    filter: brightness(25%);
+    background-size: cover;    
+
 `;
 

@@ -2,11 +2,11 @@ import { RiArrowLeftLine } from "react-icons/ri";
 
 import { Container } from "./styles";
 
-export function ArrowIcon() {
+export function ArrowIcon({title, ...rest}) {
   return (
     <Container>
       <RiArrowLeftLine />
-      <h2>Voltar</h2>
+      <h2>{title}</h2>
     </Container>
   );
 }

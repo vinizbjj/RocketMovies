@@ -14,8 +14,7 @@ export function New() {
       <main>
         <Form>
           <header>
-            <ArrowIcon />
-            <h1>Novo Filme</h1>
+            <ArrowIcon title={"Voltar"}/>
           </header>
 
           <div>

@@ -13,7 +13,7 @@ export function Details() {
       <main>
         <Section title="">
 
-          <ArrowIcon />
+          <ArrowIcon title={"Voltar"}/>
           
           <div>
             <h2>Interstellar</h2>

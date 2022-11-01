@@ -10,7 +10,7 @@ export const Container = styled.div`
         align-items: center;
         padding: 0 124px;
 
-        background: ${({ theme }) => theme.COLORS.BACKGROUND_600};
+        background: ${({ theme }) => theme.COLORS.PINK_100};
     }
 
 > header a span {
