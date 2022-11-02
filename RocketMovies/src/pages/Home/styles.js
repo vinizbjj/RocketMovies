@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components'
 import { Tag } from '../../components/Tag';
 
@@ -11,6 +12,8 @@ export const Container = styled.div`
     "header"
     "section"
     "content";
+
+    overflow-x: hidden; 
 
 > Section {
     width: 100%;
@@ -51,7 +54,7 @@ main::-webkit-scrollbar-thumb {
    
 `;
 
-export const NewNote = styled.button`
+export const NewNote = styled(Link)`
     width: 207px;
     height: 48px;
 
@@ -75,8 +78,8 @@ export const NewNote = styled.button`
 
     > h3 {
         font-size: 1.6rem;
-    }
-    
+        font-weight: 400;
+    }  
 
 `;
 
@@ -86,7 +89,14 @@ padding: 32px;
 border-radius: 16px;
 margin-bottom: 24px;
 
-> h4 {
+a {
+    color: ${({ theme }) => theme.COLORS.WHITE_100};
+
+
+}
+
+> a h4 {
+    width: 100px;
     font-size: 2.4rem;
     font-weight: 700;
     cursor: pointer;
@@ -106,12 +116,12 @@ margin-bottom: 24px;
     color: ${({ theme }) => theme.COLORS.GRAY_200};
 }
 
-button svg {
+> button svg {
     font-size: 16px;
     padding-right: 2px;
     margin: 2px 0;
 }
-> span{
+> span {
     line-height: 65px;
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND_600};
 }

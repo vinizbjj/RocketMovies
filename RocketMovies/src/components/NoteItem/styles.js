@@ -8,21 +8,22 @@ export const Container = styled.div`
     border: ${({ theme, isNew }) => isNew ? `2px dashed ${theme.COLORS.GRAY_300}` : "none"};
         
     border-radius: 10px;
-    padding: 1.6rem;    
-
+    padding: 1.6rem;
+    
     > button {
         border: none;
         background: none;
         font-size: 32px;
         font-weight: 400;
-        margin: -35px;        
+        margin: -35px;      
+
     }
 
     .button-delete {
-        color: ${({theme})=> theme.COLORS.PINK};
+        color: ${({ theme }) => theme.COLORS.PINK};
     }
     .button-add {
-        color: ${({theme})=> theme.COLORS.PINK};
+        color: ${({ theme }) => theme.COLORS.PINK};
     }
 
     > input{
@@ -38,6 +39,9 @@ export const Container = styled.div`
         font-weight: 400;
 
         border: 0;
+
+        box-shadow: 0 0 0 0;
+  outline: 0;
 
         &::placeholder{
             color: ${({ theme, isNew }) => isNew ? theme.COLORS.GRAY_300 : theme.COLORS.WHITE}

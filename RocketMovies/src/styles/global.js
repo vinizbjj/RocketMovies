@@ -8,6 +8,7 @@ export default createGlobalStyle`
         font-family: 'Roboto Slab', serif;
         font-size: 62.5%;
         box-shadow: 0 0 0 0;
+        text-decoration: none;
         
     }
 
@@ -23,6 +24,7 @@ export default createGlobalStyle`
     button, a{
         cursor: pointer;
         transition: filter 0.2s;
+        
     }
 
     button:hover, a:hover{

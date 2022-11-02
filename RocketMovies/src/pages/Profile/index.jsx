@@ -3,14 +3,15 @@ import { ArrowIcon } from "../../components/ArrowIcon";
 import { Container, Form, Avatar } from "./styles";
 import { Button } from "../../components/Button";
 import { Input } from "../../components/Input";
+import { Link } from "react-router-dom";
 
 export function Profile() {
   return (
     <Container>
       <header>
-        <a href="/">
+        <Link to={"/"}>
           <ArrowIcon />
-        </a>
+        </Link>
       </header>
 
       <Form>

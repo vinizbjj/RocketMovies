@@ -5,13 +5,14 @@ import { GrAdd } from "react-icons/gr";
 import { Tag } from "../../components/Tag";
 import { Star } from "../Details/styles";
 import { RiStarSFill, RiStarLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 export function Home() {
   return (
     <Container>
       <Header />
       <Section title="Meus Filmes">
-        <NewNote>
+        <NewNote to={"/new"}>
           <GrAdd />
           <h3>Adicionar Filme</h3>
         </NewNote>
@@ -19,7 +20,9 @@ export function Home() {
 
       <main>
         <Content>
-          <h4>Interstellar</h4>
+        <Link to={"/details"}>
+            <h4>Interstellar</h4>
+          </Link>
           <Star>
             <RiStarSFill />
             <RiStarSFill />
@@ -64,7 +67,9 @@ export function Home() {
           <Tag title="Familia" />
         </Content>
         <Content>
-          <h4>Interstellar</h4>
+          <Link to={"/details"}>
+            <h4>Interstellar</h4>
+          </Link>
           <Star>
             <RiStarSFill />
             <RiStarSFill />

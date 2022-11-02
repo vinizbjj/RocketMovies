@@ -17,7 +17,7 @@ export const Container = styled.header`
 
     padding: 24px 123px;  
    
-    h1{
+    h1 {
 
     font-weight: 700;
     font-size: 2.4rem;
@@ -32,7 +32,7 @@ export const Profile = styled.div`
     align-items: center;
     
 
-    > img {
+    > a img {
        width: 56px;
        height: 56px;
        border: 1px solid ${({ theme }) => theme.COLORS.GRAY_500};

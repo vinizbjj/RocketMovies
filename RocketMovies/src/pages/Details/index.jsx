@@ -5,6 +5,7 @@ import { Header } from "../../components/Header";
 import { Container, Star, Img } from "./styles";
 import { Tag, TextLorem } from "../../components/Tag";
 import { ArrowIcon } from "../../components/ArrowIcon";
+import { Link } from "react-router-dom";
 
 export function Details() {
   return (
@@ -12,9 +13,10 @@ export function Details() {
       <Header />
       <main>
         <Section title="">
+          <Link to={"/"}>
+            <ArrowIcon title={"Voltar"} />
+          </Link>
 
-          <ArrowIcon title={"Voltar"}/>
-          
           <div>
             <h2>Interstellar</h2>
             <Star>
@@ -73,7 +75,6 @@ export function Details() {
             atrasando a partida. Ao voltarem para a Endurance, Cooper e Amelia
             descobrem que 23 anos se passaram.
           </TextLorem>
-
         </Section>
       </main>
     </Container>

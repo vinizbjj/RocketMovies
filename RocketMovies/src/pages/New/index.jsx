@@ -6,6 +6,7 @@ import { Button } from "../../components/Button";
 import { Input } from "../../components/Input";
 
 import { Container, Form, TextArea } from "./styles";
+import { Link } from "react-router-dom";
 
 export function New() {
   return (
@@ -13,10 +14,11 @@ export function New() {
       <Header />
       <main>
         <Form>
-          <header>
-            <ArrowIcon title={"Voltar"}/>
-          </header>
-
+          <Link to={"/"}>
+            <header>
+              <ArrowIcon title={"Voltar"} />
+            </header>
+          </Link>
           <div>
             <Input placeholder="Titulo" />
             <Input placeholder="Sua nota(de 0 a 5)" />

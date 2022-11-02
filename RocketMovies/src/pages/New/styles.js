@@ -108,16 +108,19 @@ export const TextArea = styled.textarea`
   border: none;
   border-radius: 10px;
   resize: none;
+  box-shadow: 0 0 0 0;
+  outline: 0;
   
 
   margin: 24px 104px 40px 104px;
   font-size: 1.6rem;
   padding-right: 20px;
+  padding: 16px;
 
 
   &::placeholder{
     color: ${({ theme }) => theme.COLORS.GRAY_300};
-    padding: 16px;
+    
 
     
   }
