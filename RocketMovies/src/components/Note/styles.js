@@ -1,31 +1,28 @@
-
 import styled from "styled-components";
 
-export const Container = styled.span`
-    
-    font-weight: 400;
-    font-size: 12px;
 
-    color: ${({ theme }) => theme.COLORS.WHITE_200};
-    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
-    padding: 5px 14px;
+export const Container = styled.button`
+width: 100%;
+background-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
 
-    border-radius: 8px;
-    margin-right: 6px;
+border: none;
+border-radius: 10px;
+
+padding: 22px;
+margin-bottom: 16px;
+
+>h1, p{
+    flex: 1;
+    text-align: left;
+    font-weight: 700;
+    font-size: 24px;
+    color: ${({ theme }) => theme.COLORS.WHITE};
+}
+
+> footer{
+    width: 100%;
+    display: flex;
+    margin-top: 24px;
+
+}
 `;
-
-
-export const Text = styled.p`
-    padding-right: 100px;
-    font-weight: 400;
-    font-size: 16px;
-
-    margin: 40px 0 0 104px;
-    text-align: justify;
-
-    color: ${({ theme }) => theme.COLORS.WHITE_200};    
-
-`;
-
-
-
