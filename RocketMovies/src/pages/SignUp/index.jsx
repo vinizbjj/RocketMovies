@@ -3,6 +3,7 @@ import { Container, Form, Background } from "./styles";
 import { FiMail, FiLock, FiUser } from "react-icons/fi";
 import { Button } from "../../components/Button";
 import { ArrowIcon } from "../../components/ArrowIcon";
+import { Link } from "react-router-dom";
 
 export function SignUp() {
   return (
@@ -19,9 +20,9 @@ export function SignUp() {
 
         <Button title="Cadastrar" />
 
-        <a href="#">
+        <Link to={"/"}>
           <ArrowIcon title={"Voltar para o login"}/>
-        </a>
+        </Link>
       </Form>
 
       <Background />

@@ -6,12 +6,9 @@ export const Container = styled.div`
     color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
 
     border: ${({ theme, isNew }) => isNew ? `2px dashed ${theme.COLORS.GRAY_300}` : "none"};
-
-    
+        
     border-radius: 10px;
-    padding: 1.6rem;
-
-    
+    padding: 1.6rem;    
 
     > button {
         border: none;

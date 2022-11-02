@@ -19,6 +19,9 @@ export const Container = styled.div`
         border-top-right-radius: 10px;
         border-end-end-radius: 10px;
 
+        box-shadow: 0 0 0 0;
+        outline: 0;
+
         font-size: 1.6rem;
     }
     > svg{
